@@ -1,0 +1,35 @@
+version: "1.0.0"
+description: Infant cry detection from 16 kHz mono PCM on Espressif chips
+url: https://github.com/espressif/esp-apa/tree/main/components/esp_apa_cry_detection
+issues: https://github.com/espressif/esp-apa/issues
+
+tags:
+  - audio
+  - cry
+  - detection
+  - apa
+  - infant
+  - multimedia
+  - gmf
+  - adf
+
+dependencies:
+  idf: ">=5.3"
+  espressif/gmf_fft: "~1.1.0"
+
+targets:
+  - esp32
+  - esp32c3
+  - esp32c5
+  - esp32c6
+  - esp32c61
+  - esp32s3
+  - esp32s31
+  - esp32p4
+
+files:
+  exclude:
+    - "test_app"
+
+examples:
+  - path: examples/infant_cry_detection

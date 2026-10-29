@@ -1,0 +1,35 @@
+exclude_dirs = [
+    "managed_components",
+    "**/managed_components",
+    "**/test_scripts",
+]
+
+[gitlab.artifacts.native]
+build_job_filepatterns = [
+    "components/**/build*/bootloader/*.map",
+    "components/**/build*/bootloader/*.elf",
+    "components/**/build*/*.map",
+    "components/**/build*/*.elf",
+    "components/**/build*/bootloader/*.bin",
+    "components/**/build*/*.bin",
+    "components/**/build*/partition_table/*.bin",
+    "components/**/build*/flasher_args.json",
+    "components/**/build*/flash_project_args",
+    "components/**/build*/config/sdkconfig.json",
+    "components/**/build*/sdkconfig",
+    "components/**/build*/project_description.json",
+    "components/**/build*/build.log",
+    "app_info_*.txt",
+    "build_summary_*.xml",
+    "logs/**",
+]
+
+test_job_filepatterns = [
+    "pytest-embedded/",
+    "XUNIT_RESULT*.xml",
+]
+
+[gitlab.build_pipeline]
+job_tags = ["build"]
+job_stage = "build"
+runs_per_job = 60

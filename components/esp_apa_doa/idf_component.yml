@@ -1,0 +1,34 @@
+version: "1.0.0"
+description: Espressif direction-of-arrival (DOA) audio processing component
+url: https://github.com/espressif/esp-apa/tree/main/components/esp_apa_doa
+issues: https://github.com/espressif/esp-apa/issues
+
+tags:
+  - audio
+  - doa
+  - gmf
+  - apa
+  - azimuth
+  - direction-of-arrival
+  - voice
+  - multimedia
+
+dependencies:
+  idf: ">=5.3"
+
+targets:
+  - esp32
+  - esp32c3
+  - esp32c5
+  - esp32c6
+  - esp32c61
+  - esp32s3
+  - esp32s31
+  - esp32p4
+
+files:
+  exclude:
+    - "test_app"
+
+examples:
+  - path: examples/live_example

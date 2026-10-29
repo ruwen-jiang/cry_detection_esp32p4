@@ -1,0 +1,5 @@
+dependencies:
+  esp_apa_doa:
+    override_path: "../../.."
+  espressif/esp_board_manager:
+    version: "*"

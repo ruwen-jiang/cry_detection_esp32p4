@@ -1,0 +1,26 @@
+config_rules = [
+    "sdkconfig.ci=default",
+    "sdkconfig.ci.*=",
+    "=default",
+]
+
+recursive = true
+check_warnings = false
+keep_going = true
+
+build_dir = "build_@t_@w"
+build_log_filename = "build.log"
+size_json_filename = "size.json"
+
+collect_app_info_filename = "app_info_@p.txt"
+
+exclude_dirs = [
+    "managed_components",
+    "**/managed_components",
+    "**/test_scripts",
+]
+
+check_manifest_rules = true
+manifest_filepatterns = [
+    "**/.build-test-rules.yml",
+]

@@ -1,0 +1,13 @@
+# Common defaults for all targets (see also sdkconfig.defaults.<chip>).
+
+CONFIG_ESPTOOLPY_FLASHFREQ_80M=y
+CONFIG_FREERTOS_HZ=1000
+
+# Angle-accuracy tests synthesize ~1 s of audio per case; relax WDT for CI.
+CONFIG_ESP_TASK_WDT_EN=n
+CONFIG_ESP_INT_WDT=n
+
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=8192
+CONFIG_UNITY_ENABLE_BACKTRACE_ON_FAIL=y
+CONFIG_COMPILER_OPTIMIZATION_PERF=y

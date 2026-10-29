@@ -1,0 +1,6 @@
+dependencies:
+  esp_apa_cry_detection:
+    version: "*"
+    override_path: "../../.."
+  espressif/esp_board_manager: "~0.7.0"
+  espressif/esp-sr: ">=1.0.0"

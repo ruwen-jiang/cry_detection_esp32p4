@@ -1,0 +1,3 @@
+dependencies:
+  esp_apa_cry_detection:
+    override_path: "../.."

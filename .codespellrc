@@ -1,0 +1,4 @@
+[codespell]
+skip = _build,*.drawio,*.svg,*.pdf,*.js,*.py,*.html,*.xml
+ignore-words-list = delt,dout,AFE,afe
+write-changes = true
